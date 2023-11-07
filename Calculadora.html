@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="calculadora.js"></script>
+    <link rel="stylesheet" type="text/css" href="calculadora.css">
+	<title>Calculadora Básica</title>
+</head>
+<center>
+    <body class="backgroundGeral">
+        <div class="borda">
+            <div class="calculator">
+                <div class="titulo">
+                    <br><n>BASIC CALCULATOR</n><br>
+                </div>
+                <br>
+                    <input type="text" id="input" class="display">
+                <div class="calculator-keys" id="botoes">
+                    <br>
+                    <br>
+                    <button type="button" class="botoes" onclick="MC();">MC</button>
+                    <button type="button" class="botoes" onclick="Madd();">M+</button>
+                    <button type="button" class="botoes" onclick="Msub();">M-</button>
+                    <button type="button" class="botoes" onclick="MR();">MR</button>
+                    <br><br>
+                    <button type="button" class="botoes" onclick="ac();">C</button>
+                    <button type="button" class="botoes" onclick="neg();">+/-</button>
+                    <button type="button" class="botoes" onclick="add('/');">&divide;</button>
+                    <button type="button" class="botoes" onclick="add('*');">&times;</button>
+                    <br><br>
+                    <button type="button" class="botoes" onclick="add('7');">7</button>
+                    <button type="button" class="botoes" onclick="add('8');">8</button>
+                    <button type="button" class="botoes" onclick="add('9');">9</button>
+                    <button type="button" class="botoes" onclick="add('-');">-</button>
+                    <br><br>
+                    <button type="button" class="botoes" onclick="add('4');">4</button>
+                    <button type="button" class="botoes" onclick="add('5');">5</button>
+                    <button type="button" class="botoes" onclick="add('6');">6</button>
+                    <button type="button" class="botoes" onclick="add('+');">+</button>
+                    <br><br>
+                    <button type="button" class="botoes" onclick="add('1');">1</button>
+                    <button type="button" class="botoes" onclick="add('2');">2</button>
+                    <button type="button" class="botoes" onclick="add('3');">3</button>
+                    <button type="button" class="botoes" onclick="add('.');">.</button>
+                    <br><br>
+                    <button type="button" class="ZeEqboton" onclick="add('0')">0</button>
+                    <button type="button" class="ZeEqboton" onclick="igual()">=</button>
+                    <br>
+                </div>
+            </div>
+            <br>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</center>
+</html>
