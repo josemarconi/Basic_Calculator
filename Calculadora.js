@@ -2,6 +2,12 @@ let display = "";
 let memory = 0;
 
 function add(value) {
+
+  if(value === ':')
+  {
+    value = '/';
+  }
+
   display += value;
   document.getElementById("input").value = display;
 }
@@ -17,7 +23,7 @@ function igual() {
   }
 }
 
-function ac() {
+function c() {
   display = "";
   document.getElementById("input").value = display;
 }
@@ -46,3 +52,27 @@ function MR() {
   display = memory.toString();
   document.getElementById("input").value = display;
 }
+
+document.addEventListener('keydown', function (event) {
+  const tecla = event.key;
+
+  if (/['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']/.test(tecla)) {
+    add(tecla);
+  } else if (['+', '-', '*', ':', '.'].includes(tecla)) {
+    add(tecla);
+  } else if (tecla === '=') {
+    igual();
+  } else if (tecla === 'c') {
+    c();
+  } else if (tecla === 'n') {
+    neg();
+  } else if (tecla === 'q') {
+    MC();
+  } else if (tecla === 'w') {
+    Madd();
+  } else if (tecla === 'e') {
+    Msub();
+  } else if (tecla === 'r') {
+    MR();
+  }
+});
